@@ -1,5 +1,48 @@
 # Techv3nt🚀
 
+Tech3vnt is decentralized platform to find Technicat Events , Meetups , Hackathons & conferences around you
+
+## TechStack Used
+- React
+- Tailwind CSS 
+- 5ire 
+- Solidity 
+- NFT Port 
+- ether js 
+- Push Protocol 
+- wagmi 
+- react-router-dom
+- react-toastify
+- MUI-Icons
+- Axios 
+- Rainbow Kit
+- OpenWeatherMap API
+- Geolocation
+
+## Local Setup 🚧
+
+1. Fork the repo.
+2. Clone the repo.
+```
+https://github.com/[YOUR_USER_ACCOUNT]/Techv3nt
+```
+3. Generate API keys for Alchemy, Push Protocol, OpenWeatherMap & NFTPort.
+4. Create .env file at the root of the project and initiate environment variables of the API keys, Refer `.env.example`.
+
+
+5. Navigate to the clone
+```
+ cd Techv3nt
+ ```
+6. Install dependencies
+ ```
+ yarn
+ ```
+7. Start the website locally using
+ ```
+ yarn start
+ ```
+
 ## List of all Smart Contracts deployed on goerli testnet:
 
 ```
