@@ -16,7 +16,7 @@ import {
   darkTheme,
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { Chain, goerli } from "wagmi/chains";
+import { Chain, goerli, sepolia } from "wagmi/chains";
 
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
@@ -47,7 +47,7 @@ const fireChain: Chain = {
 };
 
 const { chains, provider } = configureChains(
-  [goerli, fireChain],
+  [goerli, fireChain, sepolia],
   [
     alchemyProvider({ apiKey: process.env.REACT_APP_ALCHEMY_ID }),
     publicProvider(),
