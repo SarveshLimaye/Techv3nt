@@ -44,7 +44,7 @@ const AddEvent = () => {
     console.log(accounts);
     const signer = provider.getSigner();
     const contract = new ethers.Contract(
-      "0x5c4860e038f037Db43d35a563aD1332427b0e4D6",
+      "0xa7CE6C01375b0f5208DB08b9b1Fc49426F443E78",
       createEventabi,
       signer
     );

@@ -15,7 +15,7 @@ const Admin = () => {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       const contract = new ethers.Contract(
-        "0x5c4860e038f037Db43d35a563aD1332427b0e4D6",
+        "0xa7CE6C01375b0f5208DB08b9b1Fc49426F443E78",
         createEventabi,
         signer
       );
@@ -33,7 +33,7 @@ const Admin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
-      walletAddress === "0x56f20e89a0cb5097fa41695e6e15d97e1aa58092" &&
+      walletAddress === "0x12d0Ad7d21bdbe7E05AB0aDd973C58fB48b52Ae5" &&
       passwd === "sarveshop"
     ) {
       setLogin(true);
@@ -105,7 +105,7 @@ const Admin = () => {
           </div>
         </div>
       ) : (
-        <div className="flex flex-wrap gap-8 m-2 items-center justify-center h-[85vh]">
+        <div className="flex flex-wrap gap-8 m-2 items-center justify-center h-[125vh]">
           {events.map((item, index) => (
             <AdminEventsCard indivisualevent={item} key={index} />
           ))}

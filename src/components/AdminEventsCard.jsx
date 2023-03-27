@@ -17,6 +17,7 @@ export default function AdminEventsCard({ indivisualevent }) {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       const contract = new ethers.Contract(indivisualevent, eventsabi, signer);
+      console.log(contract);
       contract
         .name()
         .then((result) => {
@@ -89,7 +90,7 @@ export default function AdminEventsCard({ indivisualevent }) {
     const signer = provider.getSigner();
     const accounts = await provider.listAccounts();
     const contract = new ethers.Contract(indivisualevent, eventsabi, signer);
-
+    console.log(contract);
     const tx = contract.verifyEvent(true, accounts[0]);
     console.log(tx);
   };
